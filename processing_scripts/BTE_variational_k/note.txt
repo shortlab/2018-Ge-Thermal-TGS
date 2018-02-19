@@ -1,0 +1,5 @@
+Received from Samuel Huberman on 2017/08/08
+
+(Gang Chen group)
+
+See reference S. Huberman, V. Chiloyan, R. A. Duncan, L. Zeng, R. Jia, A. A. Maznev, E. A. Fitzgerald, K. A. Nelson, and G. Chen, “Unifying first-principles theoretical predictions and experimental measurements of size effects in thermal transport in SiGe alloys,” Phys. Rev. Materials 1, 054601 (2017) for details of the method.
