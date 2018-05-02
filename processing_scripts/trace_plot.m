@@ -7,6 +7,7 @@ phase_str_pos='Ge_thermal-111_011_vac_phase-04.80um-spot07-POS-1.txt';
 phase_str_neg='Ge_thermal-111_011_vac_phase-04.80um-spot07-NEG-1.txt';
 amp_str_pos='Ge_thermal-111_011_vac_amp-04.80um-spot01-POS-1.txt';
 amp_str_neg='Ge_thermal-111_011_vac_amp-04.80um-spot01-NEG-1.txt';
+grat48=grat48=4.7985;
 
 hdr_len=16;
 end_time=100;
@@ -14,7 +15,7 @@ end_time=100;
 %Change user directory to run correctly
 cd('.../111_011_vac_phase/')
 
-[fft,~]=make_fft_embed_time(1,phase_str_pos,phase_str_neg,'therm',5,5.5,0);
+[fft]=TGS_phase_fft(phase_str_pos,phase_str_neg,grat48);
 
 pos=dlmread(phase_str_pos,'',hdr_len,0);
 neg=dlmread(phase_str_neg,'',hdr_len,0);
@@ -32,7 +33,7 @@ phase_y=phase_y*3;
 %Change user directory to run properly
 cd('.../111_011_vac_amp/')
 
-[fft_a,~]=make_fft_embed_time(1,amp_str_pos,amp_str_neg,'therm',5,5.5,0);
+[fft_a]=TGS_phase_fft(amp_str_pos,amp_str_neg,grat48);
 
 pos_a=dlmread(amp_str_pos,'',hdr_len,0);
 neg_a=dlmread(amp_str_neg,'',hdr_len,0);
